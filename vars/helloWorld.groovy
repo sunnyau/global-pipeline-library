@@ -1,4 +1,4 @@
-def call() {
+def call(Map config = [:]) {
     // replace sh with bat on Windows
-    bat "echo hello world from helloWorld.groovy in global-pipeline-library"
+    bat "echo hello world ${config.name} from helloWorld.groovy in global-pipeline-library"
 }
